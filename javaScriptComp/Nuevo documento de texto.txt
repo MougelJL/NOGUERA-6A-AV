@@ -1,0 +1,35 @@
+<html>
+<body>
+<script type="text/javascript">
+<!--
+var a = 10;
+var b = 20;
+var linebreak = "<br />";
+
+document.write("a = " + a)
+document.write(linebreak)
+document.write("b = " + b)
+document.write(linebreak)
+
+
+document.write("(a == b) => ");
+result = (a == b);
+document.write(result);
+document.write(linebreak);
+
+document.write("(a < b) => ");
+result = (a < b);
+document.write(result);
+document.write(linebreak);
+
+document.write("(a > b) => ");
+result = (a > b);
+document.write(result);
+document.write(linebreak);
+document.write("<br/><br/><p><a href=\"../index.html\">volver</a></p>" )
+</script>
+
+<p>
+agarra diferentes valores y vuelve a probar
+</p>
+</html>
