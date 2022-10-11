@@ -1,0 +1,62 @@
+<html>
+<head>
+<script type="text/javascript">
+<!--
+function XL(l,f)
+{
+	const xl=2*Math.PI*l*f;
+	return xl;
+}
+
+function XC(c,f)
+{
+	const xc= 1/(2*Math.PI*f*c);
+	return xc;
+}
+function Z (j,r)
+{
+	const z = r.toString()+;
+	return z;
+}
+
+function Zmod(j,r)
+{
+	const z_mod = Math.sqrt((j**j)+(r**r));
+	return z_mod;
+}
+
+function Phi(j,r)
+{
+	const phi = Math.atan(j/r);
+	return phi;
+}
+//-->
+</script>
+</head>
+<body>
+
+<form>
+<script>
+	const f = Number(prompt("Ingrese frecuencia en Hz(F)"))
+	const l = Number(prompt("Ingrese inductacia en Hy(L)"))
+	const c = Number(prompt("Ingrese Capacitancia en F(C)"))
+	const r = Number(prompt("Ingrese resitencia en Ohms(R)"))
+	
+	const xl = XL(l,f);
+	const xc = XC(c,f);
+	const j = xl-xc;
+	const z = Z(j,r);
+	const z_mod = Zmod(j,r);
+	const phi = Phi(j,r);
+	
+	document.write("Impedancia Inductiva = "+xl);
+	document.write("</br>Impedancia Capacitiva = "+xc);
+	document.write("</br> Impedancia total = "+z);
+	document.write("</br> Modulo de Z = "+z_mod);
+	document.write("</br> Angulo phi = "+phi+"°");
+	
+</script>
+</form>
+
+</body>
+</html>
